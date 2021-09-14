@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import store from './reducers/index';
 import App from './components/presentation/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
