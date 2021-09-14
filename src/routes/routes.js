@@ -5,7 +5,7 @@ import Main from '../components/container/Main';
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route />
+      <Route exact path="/" component={Main} />
     </Switch>
   </BrowserRouter>
 );

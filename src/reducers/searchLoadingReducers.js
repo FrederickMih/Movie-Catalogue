@@ -8,6 +8,7 @@ export const initialState = {
   movies: [],
   movie: [],
   loading: false,
+  initialScreen: true,
   page: 1,
 };
 

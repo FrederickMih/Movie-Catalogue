@@ -8,6 +8,7 @@ export const initialState = {
   movies: [],
   movie: [],
   loading: false,
+  initialScreen: true,
   page: 1,
 };
 
@@ -16,13 +17,13 @@ const moviesReducer = (state = initialState, action) => {
     case FETCH_MOVIES:
       return {
         ...state,
-        articles: action.payload,
+        movies: action.payload,
         loading: false,
       };
     case FETCH_MORE_MOVIES:
       return {
         ...state,
-        article: action.payload,
+        movie: action.payload,
         loading: false,
       };
     default:

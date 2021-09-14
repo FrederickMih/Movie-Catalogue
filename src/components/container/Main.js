@@ -12,13 +12,14 @@ const Main = (props) => {
 
   return (
     <div className="container">
+      <h1>Helllloooooooooooo...............</h1>
       <MovieContainer />
     </div>
   );
 };
 
 const mapStateToProps = (state) => ({
-  loading: state.films.loading,
+  movie: state.movies,
 });
 
 Main.propTypes = {
@@ -27,7 +28,7 @@ Main.propTypes = {
 };
 
 Main.defaultProps = {
-  keyword: false,
+  keyword: '',
 };
 
 export default connect(mapStateToProps, { fetchMovies })(Main);

@@ -1,7 +1,7 @@
 import { FILTER_MOVIE } from '../actions';
 
 export const initialState = {
-  filter: 'Films',
+  filter: 'All',
 };
 
 const filterMovieReducer = (state = initialState, action) => {
