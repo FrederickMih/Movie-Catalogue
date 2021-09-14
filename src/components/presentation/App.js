@@ -1,6 +1,12 @@
+import Navbar from './NavBar';
+import Footer from './Footer';
+import Routes from '../../routes/routes';
+
 const App = () => (
   <div className="app-div">
-    <h1>catalogue</h1>
+    <Navbar />
+    <Routes />
+    <Footer />
   </div>
 );
 
