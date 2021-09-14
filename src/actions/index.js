@@ -43,11 +43,11 @@ const setLoading = () => ({
   type: LOADING,
 });
 
-const filterArticle = (filter) => ({
+const filterMovie = (filter) => ({
   type: FILTER_MOVIE,
   payload: filter,
 });
 
 export {
-  searchMovie, fetchMovies, fetchMoreMovies, setLoading, filterArticle,
+  searchMovie, fetchMovies, fetchMoreMovies, setLoading, filterMovie,
 };
