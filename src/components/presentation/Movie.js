@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Movie = (props) => {
   const { movie } = props;
   return (
-    <div className="col-md-3 my-4">
+    <div className="col-md-3 my-4 movie-con">
       <div className="card card-body bg-dark text-center h-100">
         <Link className="btn btn-warning mt-auto" to={`/movie/${movie.imdbID}`}>
           <img className="w-100 mb-2" src={movie.Poster} alt="movie Cover" />

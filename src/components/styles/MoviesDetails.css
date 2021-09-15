@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 70%;
+  width: 80%;
   color: white;
   border: 1px solid #c9ab81;
   border-radius: 10px;
@@ -17,4 +17,12 @@
   max-height: 35rem;
   margin: 0 auto;
   margin-bottom: 3rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .details-div {
+    width: 95%;
+    font-size: small;
+  }
 }

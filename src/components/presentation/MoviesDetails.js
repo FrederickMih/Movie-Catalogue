@@ -24,59 +24,73 @@ const MovieDetails = (props) => {
           <h2 className="mb-4">{movie.Title}</h2>
           <ul className="list-group">
             <li className="list-group-item">
-              <strong>Conspiracy: </strong>
+              <strong>Conspiracy </strong>
+              {': '}
               {movie.Plot}
             </li>
             <li className="list-group-item">
-              <strong>Country: </strong>
+              <strong>Country </strong>
+              {': '}
               {movie.Country}
             </li>
             <li className="list-group-item">
-              <strong>Category: </strong>
+              <strong>Category </strong>
+              {': '}
               {movie.Genre}
             </li>
             <li className="list-group-item">
-              <strong>Actors: </strong>
+              <strong>Actors </strong>
+              {': '}
               {movie.Actors}
             </li>
             <li className="list-group-item">
-              <strong>Director: </strong>
+              <strong>Director </strong>
+              {': '}
               {movie.Director}
             </li>
             <li className="list-group-item">
-              <strong>Runtime: </strong>
+              <strong>Runtime </strong>
+              {': '}
               {movie.Runtime}
             </li>
             <li className="list-group-item">
-              <strong>Released: </strong>
+              <strong>Released </strong>
+              {': '}
               {movie.Released}
             </li>
             <li className="list-group-item">
-              <strong>Rated: </strong>
+              <strong>Rated </strong>
+              {': '}
               {movie.Rated}
             </li>
             <li className="list-group-item">
-              <strong>Rating: </strong>
+              <strong>Rating </strong>
+              {': '}
               {movie.imdbRating}
             </li>
             <li className="list-group-item">
-              <strong>Writer: </strong>
+              <strong>Writer </strong>
+              {': '}
               {movie.Writer}
             </li>
             <li className="list-group-item">
-              <strong>Production: </strong>
+              <strong>Production </strong>
+              {': '}
               {movie.Production}
             </li>
             <li className="list-group-item">
-              <strong>Awards: </strong>
+              <strong>Awards </strong>
+              {': '}
               {movie.Awards}
             </li>
             <li className="list-group-item">
-              <strong>Language: </strong>
+              <strong>Language </strong>
+              {': '}
               {movie.Language}
             </li>
             <li className="list-group-item">
-              <strong>BoxOffice: </strong>
+              <strong>BoxOffice </strong>
+              {': '}
               {movie.BoxOffice}
             </li>
           </ul>
