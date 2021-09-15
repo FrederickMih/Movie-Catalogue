@@ -1,4 +1,6 @@
 import {
+  SEARCH_MOVIE,
+  LOADING,
   FETCH_MOVIES,
   FETCH_MORE_MOVIES,
 } from '../actions';
@@ -25,6 +27,18 @@ const moviesReducer = (state = initialState, action) => {
         ...state,
         movie: action.payload,
         loading: false,
+      };
+
+    case SEARCH_MOVIE:
+      return {
+        ...state,
+        keyword: action.payload,
+        loading: false,
+      };
+    case LOADING:
+      return {
+        ...state,
+        loading: true,
       };
     default:
       return state;

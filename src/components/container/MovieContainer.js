@@ -6,7 +6,7 @@ import Movie from '../presentation/Movie';
 const MovieContainer = (props) => {
   const { movies, filter } = props;
 
-  const filterMovies = (movies, filter) => (filter === 'All' ? movies.Search : movies.Search.filter((mov) => mov.Type === filter));
+  const filterMovies = (movies, filter) => (filter === 'All' ? movies.Search : movies.Search.filter((movie) => movie.Type === filter));
 
   const filteredMovies = filterMovies(movies, filter);
   // console.log(movies);

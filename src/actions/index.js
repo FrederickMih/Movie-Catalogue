@@ -9,8 +9,8 @@ export const FILTER_MOVIE = 'FILTER_MOVIE';
 const apiKey = '6959258b';
 
 const fetchMovies = (keyword, page = 1) => (dispatch) => {
-  // const req1 = (`https://www.omdbapi.com/?apikey=${apiKey}&s=${keyword}&page=${page}`);
-  axios.get(`https://www.omdbapi.com/?apikey=${apiKey}&s=${keyword}&page=${page}`)
+  const req1 = (`https://www.omdbapi.com/?apikey=${apiKey}&s=${keyword}&page=${page}`);
+  axios.get(req1)
     .then((response) => dispatch({
       type: FETCH_MOVIES,
       payload: response.data,

@@ -4,8 +4,11 @@ import { connect } from 'react-redux';
 import MovieContainer from './MovieContainer';
 import SearchForm from './SearchForm';
 import { fetchMovies } from '../../actions';
+import PageLoader from '../presentation/PageLoader';
 
 const Main = (props) => {
+  const { loading } = props;
+
   useEffect(() => {
     props.fetchMovies(props.keyword);
   }, []);
@@ -13,21 +16,23 @@ const Main = (props) => {
   return (
     <div className="container">
       <SearchForm />
-      <MovieContainer />
+      {loading ? <PageLoader /> : <MovieContainer />}
     </div>
   );
 };
 
 const mapStateToProps = (state) => ({
-  movie: state.movies,
+  loading: state.movies.loading,
 });
 
 Main.propTypes = {
+  loading: PropTypes.bool,
   keyword: PropTypes.string,
   fetchMovies: PropTypes.func.isRequired,
 };
 
 Main.defaultProps = {
+  loading: false,
   keyword: '',
 };
 
