@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchMoreMovies, setLoading } from '../../actions/index';
 import PageLoader from './PageLoader';
+import '../styles/MoviesDetails.css';
 
 const MovieDetails = (props) => {
   useEffect(() => {
@@ -14,21 +15,33 @@ const MovieDetails = (props) => {
   const { loading, movie } = props;
 
   const moreContent = (
-    <div className="container">
+    <div className="container details-div">
+      <div className="col-md-4 card card-body image-logo">
+        <img src={movie.Poster} className="thumnail" alt="Poster" />
+      </div>
       <div className="row">
-        <div className="col-md-4 card card-body">
-          <img src={movie.Poster} className="thumnail" alt="Poster" />
-        </div>
         <div className="col-md-8">
           <h2 className="mb-4">{movie.Title}</h2>
           <ul className="list-group">
             <li className="list-group-item">
-              <strong>Plot: </strong>
+              <strong>Conspiracy: </strong>
               {movie.Plot}
             </li>
             <li className="list-group-item">
-              <strong>Genre: </strong>
+              <strong>Country: </strong>
+              {movie.Country}
+            </li>
+            <li className="list-group-item">
+              <strong>Category: </strong>
               {movie.Genre}
+            </li>
+            <li className="list-group-item">
+              <strong>Actors: </strong>
+              {movie.Actors}
+            </li>
+            <li className="list-group-item">
+              <strong>Director: </strong>
+              {movie.Director}
             </li>
             <li className="list-group-item">
               <strong>Runtime: </strong>
@@ -47,14 +60,6 @@ const MovieDetails = (props) => {
               {movie.imdbRating}
             </li>
             <li className="list-group-item">
-              <strong>Actors: </strong>
-              {movie.Actors}
-            </li>
-            <li className="list-group-item">
-              <strong>Director: </strong>
-              {movie.Director}
-            </li>
-            <li className="list-group-item">
               <strong>Writer: </strong>
               {movie.Writer}
             </li>
@@ -69,10 +74,6 @@ const MovieDetails = (props) => {
             <li className="list-group-item">
               <strong>Language: </strong>
               {movie.Language}
-            </li>
-            <li className="list-group-item">
-              <strong>Country: </strong>
-              {movie.Country}
             </li>
             <li className="list-group-item">
               <strong>BoxOffice: </strong>
