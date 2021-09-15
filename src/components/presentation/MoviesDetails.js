@@ -89,7 +89,7 @@ const MovieDetails = (props) => {
               ReadMore...
             </a>
             <Link to="/" rel="noopener noreferrer" className="btn mx-3 btn-default btn-dark">
-              Go Back to Search
+              Back Home
             </Link>
           </div>
         </div>

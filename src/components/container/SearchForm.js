@@ -5,6 +5,7 @@ import FilterMovie from '../presentation/FilterMovies';
 import {
   searchMovie, fetchMovies, setLoading, filterMovie,
 } from '../../actions/index';
+import '../styles/SearchForm.css';
 
 const SearchForm = (props) => {
   const { filterMovie } = props;
@@ -32,10 +33,10 @@ const SearchForm = (props) => {
     filterMovie(filter);
   };
   return (
-    <div className="jumbotron jumbotron-fluid mt-5 text-center">
+    <div className="jumbotron jumbotron-fluid mt-5 text-center search-form-div">
       <div className="container">
         <form id="searchForm" onSubmit={onSubmit}>
-          <input onChange={onChange} type="keyword" className="form-control" name="searchText" placeholder=" Search for..." />
+          <input onChange={onChange} type="keyword" className="form-control me-2" name="searchText" placeholder=" Search for..." />
           <FilterMovie handleFilterChange={handleFilterChange} />
           <button type="submit" className="btn btn-dark w-25 btn-bg mb-3">Search</button>
         </form>

@@ -5,6 +5,7 @@ import MovieContainer from './MovieContainer';
 import SearchForm from './SearchForm';
 import { fetchMovies } from '../../actions';
 import PageLoader from '../presentation/PageLoader';
+import '../styles/main.css';
 
 const Main = (props) => {
   const { loading } = props;
@@ -14,7 +15,7 @@ const Main = (props) => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container movie-container">
       <SearchForm />
       {loading ? <PageLoader /> : <MovieContainer />}
     </div>

@@ -8,9 +8,9 @@ import {
 export const initialState = {
   keyword: '',
   movies: [],
-  movie: [],
   loading: false,
   initialScreen: true,
+  movie: [],
   page: 1,
 };
 

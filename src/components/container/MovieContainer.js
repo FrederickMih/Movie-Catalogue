@@ -5,6 +5,7 @@ import Movie from '../presentation/Movie';
 
 const MovieContainer = (props) => {
   const { movies, filter } = props;
+  // console.log(movies);
 
   const filterMovies = (movies, filter) => (filter === 'All' ? movies.Search : movies.Search.filter((movie) => movie.Type === filter));
 
@@ -13,7 +14,7 @@ const MovieContainer = (props) => {
 
   let movieBody = '';
   movieBody = movies.Response === 'True'
-    ? filteredMovies.map((movie) => <Movie key={movie.imdbID} movie={movie} />) : '';
+    ? filteredMovies.map((movie) => <Movie key={movie.Poster} movie={movie} />) : '';
   return (
     <div className="row">
       {movieBody}
