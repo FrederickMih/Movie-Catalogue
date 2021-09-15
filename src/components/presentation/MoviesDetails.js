@@ -86,7 +86,7 @@ const MovieDetails = (props) => {
           <div className="col-md-12">
             <hr />
             <a href={`https://www.imdb.com/title/${movie.imdbID}`} target="_blank" rel="noopener noreferrer" className="btn mx-5 mt-2 btn-dark">
-              View ON IMDB
+              ReadMore...
             </a>
             <Link to="/" rel="noopener noreferrer" className="btn mx-3 btn-default btn-dark">
               Go Back to Search
