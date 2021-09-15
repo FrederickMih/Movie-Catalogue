@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MovieContainer from './MovieContainer';
-
+import SearchForm from './SearchForm';
 import { fetchMovies } from '../../actions';
 
 const Main = (props) => {
@@ -12,7 +12,7 @@ const Main = (props) => {
 
   return (
     <div className="container">
-      <h1>Helllloooooooooooo...............</h1>
+      <SearchForm />
       <MovieContainer />
     </div>
   );

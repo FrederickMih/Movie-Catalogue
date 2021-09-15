@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import FilterMovie from '../presentation/FilterMovies';
 import {
   searchMovie, fetchMovies, setLoading, filterMovie,
 } from '../../actions/index';
@@ -9,7 +10,7 @@ const SearchForm = (props) => {
   const { filterMovie } = props;
 
   useEffect(() => {
-    props.fetchMovies('2021');
+    props.fetchMovies('Movies');
   }, []);
 
   const onChange = (e) => {
@@ -44,7 +45,7 @@ const SearchForm = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  text: state.films.text,
+  keyword: state.movies.keyword,
 });
 
 SearchForm.propTypes = {
