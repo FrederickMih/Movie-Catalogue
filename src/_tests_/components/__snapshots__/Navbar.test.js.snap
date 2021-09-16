@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should renders correctly 1`] = `
+<nav
+  className="navbar"
+>
+  <h1
+    className="nav-title"
+  >
+    Movies Catalogue
+  </h1>
+</nav>
+`;
