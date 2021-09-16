@@ -23,7 +23,7 @@ Movies Catalogue is an app that allows you to search for your favorite movie. Us
 
 This application is deployed on Heroku
 
-## [Live Link]()
+## [Live Link](https://fred-movie-app.herokuapp.com/)
 
 ## Getting Started
 
