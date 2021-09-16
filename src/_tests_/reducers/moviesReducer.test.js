@@ -71,3 +71,29 @@ test('moviesReducers does not search movies when given wrong action', () => {
     loading: false,
   });
 });
+
+test('moviesReducers can FETCH_MOVIES to the main page', () => {
+  const action = {
+    type: 'FETCH_MOVIES',
+    movies: 'fetch movies',
+    loading: false,
+  };
+  expect(moviesReducers(initialState, action)).toEqual({
+    ...initialState,
+    movies: action.movie,
+    loading: false,
+  });
+});
+
+test('moviesReducers can FETCH_MORE_MOVIES to the detail page', () => {
+  const action = {
+    type: 'FETCH_MORE_MOVIES',
+    payload: 'more movies',
+    loading: false,
+  };
+  expect(moviesReducers(initialState, action)).toEqual({
+    ...initialState,
+    movie: action.payload,
+    loading: false,
+  });
+});
