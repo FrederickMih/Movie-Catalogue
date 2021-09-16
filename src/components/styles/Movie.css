@@ -13,3 +13,7 @@
   text-align: center;
   position: relative;
 }
+
+.img:hover {
+  color: #c9ab81;
+}
