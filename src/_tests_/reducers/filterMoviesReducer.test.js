@@ -16,3 +16,14 @@ test('Should allow user to filter movies my categories ', () => {
     filter: 'movies',
   });
 });
+
+test('Should allow user to filter movies by series category ', () => {
+  const action = {
+    type: 'FILTER_MOVIE',
+    payload: 'series',
+  };
+  expect(filterMovieReducer(initialState, action)).toEqual({
+    ...initialState,
+    filter: 'series',
+  });
+});
