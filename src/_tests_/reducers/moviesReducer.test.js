@@ -72,7 +72,7 @@ test('moviesReducers does not search movies when given wrong action', () => {
   });
 });
 
-test('moviesReducers can FETCH_MOVIES to the main page', () => {
+test('I should fetch movies to the main page when the correct action is dispatch to the store', () => {
   const action = {
     type: 'FETCH_MOVIES',
     movies: 'fetch movies',
@@ -85,7 +85,20 @@ test('moviesReducers can FETCH_MOVIES to the main page', () => {
   });
 });
 
-test('moviesReducers can FETCH_MORE_MOVIES to the detail page', () => {
+test('It should search a movie when the correct action is dispatch to the store', () => {
+  const action = {
+    type: 'SEARCH_MOVIE',
+    payload: 'some movies',
+    loading: false,
+  };
+  expect(moviesReducers(initialState, action)).toEqual({
+    ...initialState,
+    keyword: action.payload,
+    loading: false,
+  });
+});
+
+test('It should fetch movies to the detail page when the correct action is dispatch to the store', () => {
   const action = {
     type: 'FETCH_MORE_MOVIES',
     payload: 'more movies',
