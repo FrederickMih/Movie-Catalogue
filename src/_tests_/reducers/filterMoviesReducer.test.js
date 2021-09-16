@@ -27,3 +27,14 @@ test('Should allow user to filter movies by series category ', () => {
     filter: 'series',
   });
 });
+
+test('filmFilterReducer does not filter out movies when wrong action is given ', () => {
+  const action = {
+    type: 'WRONG_ACTION',
+    filter: 'series',
+  };
+  expect(filterMovieReducer(initialState, action)).not.toEqual({
+    ...initialState,
+    filter: 'series',
+  });
+});
