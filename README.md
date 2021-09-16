@@ -33,6 +33,7 @@ This application is deployed on Heroku
 * Run the command `https://github.com/FrederickMih/Movie-Catalogue` to get a local copy of the project
 * Switch to the main directory of the project by running `Movie-Catalogue`
 * Next, run `npm install` in your terminal to install all the dependencies of the project(NB: you will require Node.js already installed on your computer)
+* In order to use the data from the api, you will need to get an api key from `https://omdbapi.com/`.
 * Finally, run `npm start` (NB: You will needs a browser installed on your machine).
 
 ## Testing
