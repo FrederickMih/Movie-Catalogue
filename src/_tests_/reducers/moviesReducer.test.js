@@ -47,3 +47,27 @@ test('I should not fetch data of the detail page when wrong action is supplied '
     loading: false,
   });
 });
+
+test('moviesReducers can initiate LOADING', () => {
+  const action = {
+    type: 'LOADING',
+    payload: true,
+  };
+  expect(moviesReducers(initialState, action)).toEqual({
+    ...initialState,
+    loading: action.payload,
+  });
+});
+
+test('moviesReducers does not search movies when given wrong action', () => {
+  const action = {
+    type: 'WRONG_ACTION',
+    payload: 'some movies',
+    loading: false,
+  };
+  expect(moviesReducers(initialState, action)).not.toEqual({
+    ...initialState,
+    keyword: action.payload,
+    loading: false,
+  });
+});
