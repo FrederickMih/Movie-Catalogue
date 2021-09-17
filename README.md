@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Movies Catalogue
+# Catalogue of Statistics
 
-Movies Catalogue is an app that allows you to search for your favorite movie. Users can search for his/her film by entering keywords on the search field or by filtering out films by categories(movies or series). Clicking on a movie image, display the details of the movie on another page.
+ Catalogue of Statistics is an app that allows you to search for your favorite movie. Users can search for his/her film by entering keywords on the search field or by filtering out films by categories(movies or series). Clicking on a movie image, display the details of the movie on another page.
 
 ##### How it looks
 
