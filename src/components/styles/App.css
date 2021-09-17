@@ -5,7 +5,8 @@
   min-height: 100vh;
 }
 
-a, img {
+a,
+img {
   color: white;
   text-decoration: none;
 }
@@ -13,6 +14,7 @@ a, img {
 a:hover {
   color: #c9ab81;
 }
+
 img:hover {
   color: #c9ab81;
 }
