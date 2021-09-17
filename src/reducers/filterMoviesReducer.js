@@ -1,4 +1,4 @@
-import { FILTER_MOVIE } from '../actions';
+import { FILTER_MOVIE } from '../actions/constants';
 
 export const initialState = {
   filter: 'All',

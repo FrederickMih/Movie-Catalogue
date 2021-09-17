@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchMovieDetails, setLoading } from '../../actions/index';
-import PageLoader from './PageLoader';
+import PageLoader from '../presentation/PageLoader';
 import '../styles/MoviesDetails.css';
 
 const MovieDetails = (props) => {

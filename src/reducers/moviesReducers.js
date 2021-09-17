@@ -3,7 +3,7 @@ import {
   LOADING,
   FETCH_MOVIES,
   FETCH_MOVIE_DETAILS,
-} from '../actions';
+} from '../actions/constants';
 
 export const initialState = {
   keyword: '',

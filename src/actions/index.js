@@ -1,10 +1,7 @@
 import axios from 'axios';
-
-export const SEARCH_MOVIE = 'SEARCH_MOVIE';
-export const FETCH_MOVIES = 'FETCH_MOVIES';
-export const FETCH_MOVIE_DETAILS = 'FETCH_MOVIE_DETAILS';
-export const LOADING = 'LOADING';
-export const FILTER_MOVIE = 'FILTER_MOVIE';
+import {
+  SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE_DETAILS, LOADING, FILTER_MOVIE,
+} from './constants';
 
 const apiKey = '6959258b';
 
