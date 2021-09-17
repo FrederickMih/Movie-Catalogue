@@ -13,3 +13,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root') || document.createElement('div'),
 );
+
+// - React and virtual DOM concepts
+
+// - Data flow in Redux

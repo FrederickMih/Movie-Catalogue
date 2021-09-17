@@ -5,7 +5,6 @@ test('it should test for the default states ', () => {
     keyword: '',
     movies: [],
     loading: false,
-    initialScreen: true,
     movie: [],
     page: 1,
   });
@@ -100,7 +99,7 @@ test('It should search a movie when the correct action is dispatch to the store'
 
 test('It should fetch movies to the detail page when the correct action is dispatch to the store', () => {
   const action = {
-    type: 'FETCH_MORE_MOVIES',
+    type: 'FETCH_MOVIE_DETAILS',
     payload: 'more movies',
     loading: false,
   };

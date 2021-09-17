@@ -7,7 +7,6 @@ import filterMovieReducer from './filterMoviesReducer';
 const middleware = [thunk];
 const initialState = {};
 
-// eslint-disable-next-line max-len
 export const rootReducer = combineReducers({ movies: moviesReducer, filter: filterMovieReducer });
 
 const store = createStore(

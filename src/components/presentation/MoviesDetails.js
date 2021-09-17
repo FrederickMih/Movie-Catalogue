@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { fetchMoreMovies, setLoading } from '../../actions/index';
+import { fetchMovieDetails, setLoading } from '../../actions/index';
 import PageLoader from './PageLoader';
 import '../styles/MoviesDetails.css';
 
 const MovieDetails = (props) => {
   useEffect(() => {
-    props.fetchMoreMovies(props.match.params.id);
+    props.fetchMovieDetails(props.match.params.id);
     props.setLoading();
   }, []);
 
@@ -124,7 +124,7 @@ const mapStateToProps = (state) => ({
 });
 
 MovieDetails.propTypes = {
-  fetchMoreMovies: PropTypes.func.isRequired,
+  fetchMovieDetails: PropTypes.func.isRequired,
   setLoading: PropTypes.func.isRequired,
   movie: PropTypes.instanceOf(Object),
   loading: PropTypes.bool,
@@ -137,4 +137,4 @@ MovieDetails.defaultProps = {
   match: 0,
 };
 
-export default connect(mapStateToProps, { fetchMoreMovies, setLoading })(MovieDetails);
+export default connect(mapStateToProps, { fetchMovieDetails, setLoading })(MovieDetails);

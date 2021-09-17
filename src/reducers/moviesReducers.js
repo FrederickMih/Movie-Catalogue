@@ -2,14 +2,13 @@ import {
   SEARCH_MOVIE,
   LOADING,
   FETCH_MOVIES,
-  FETCH_MORE_MOVIES,
+  FETCH_MOVIE_DETAILS,
 } from '../actions';
 
 export const initialState = {
   keyword: '',
   movies: [],
   loading: false,
-  initialScreen: true,
   movie: [],
   page: 1,
 };
@@ -22,7 +21,7 @@ const moviesReducer = (state = initialState, action) => {
         movies: action.payload,
         loading: false,
       };
-    case FETCH_MORE_MOVIES:
+    case FETCH_MOVIE_DETAILS:
       return {
         ...state,
         movie: action.payload,

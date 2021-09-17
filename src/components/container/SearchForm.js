@@ -11,7 +11,7 @@ const SearchForm = (props) => {
   const { filterMovie } = props;
 
   useEffect(() => {
-    props.fetchMovies('2021');
+    props.fetchMovies('2019');
   }, []);
 
   const onChange = (e) => {
@@ -21,7 +21,7 @@ const SearchForm = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (props.keyword === '') {
-      props.fetchMovies('2021');
+      props.fetchMovies('2019');
     } else {
       props.fetchMovies(props.keyword);
     }

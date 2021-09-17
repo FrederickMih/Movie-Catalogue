@@ -11,7 +11,6 @@ const MovieContainer = (props) => {
 
   const AlreadyFiltered = filterFilms(movies, filter);
 
-  console.log(movies);
   let movieBody = '';
   movieBody = movies.Response === 'True'
     ? AlreadyFiltered.map((movie) => <Movie key={movie.Poster} movie={movie} />) : '';
