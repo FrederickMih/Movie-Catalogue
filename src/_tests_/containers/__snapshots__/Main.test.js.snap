@@ -57,6 +57,22 @@ Object {
         <div
           class="row"
         />
+        <div
+          class="my-5 d-flex justify-content-center "
+        >
+          <button
+            class="btn btn-dark mx-5 px-4 w-25"
+            type="button"
+          >
+            Previous
+          </button>
+          <button
+            class="btn btn-dark mx-5 px-4 w-25"
+            type="button"
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   </body>,
@@ -113,6 +129,22 @@ Object {
       <div
         class="row"
       />
+      <div
+        class="my-5 d-flex justify-content-center "
+      >
+        <button
+          class="btn btn-dark mx-5 px-4 w-25"
+          type="button"
+        >
+          Previous
+        </button>
+        <button
+          class="btn btn-dark mx-5 px-4 w-25"
+          type="button"
+        >
+          Next
+        </button>
+      </div>
     </div>
   </div>,
   "debug": [Function],

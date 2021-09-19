@@ -1,11 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
 import { create } from 'react-test-renderer';
-import FilterMovies from '../../components/presentation/FilterMovies';
+import FilterMovie from '../../components/presentation/FilterMovie';
 
 test('It should renders correctly', () => {
   const Placeholder = () => (
     <BrowserRouter>
-      <FilterMovies handleFilterChange={() => { }} />
+      <FilterMovie handleFilterChange={() => { }} />
     </BrowserRouter>
   );
   const tree = create(<Placeholder />).toJSON();

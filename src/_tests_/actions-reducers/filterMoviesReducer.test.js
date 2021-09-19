@@ -1,4 +1,4 @@
-import filterMovieReducer, { initialState } from '../../reducers/filterMoviesReducer';
+import filterMovieReducer, { initialState } from '../../reducers/filterReducer';
 
 test('It should filter All movies initially', () => {
   expect(initialState).toEqual({

@@ -8,8 +8,11 @@ exports[`It should renders correctly 1`] = `
    
   ©
    
-  <strong>
+  <a
+    alt="github link"
+    href="https://github.com/FrederickMih"
+  >
     Mih Frederick
-  </strong>
+  </a>
 </footer>
 `;

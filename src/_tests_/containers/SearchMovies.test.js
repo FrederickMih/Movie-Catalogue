@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import PropTypes from 'prop-types';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import SearchForm from '../../components/container/SearchForm';
+import SearchForm from '../../components/containers/SearchForm';
 import { rootReducer } from '../../reducers/index';
 
 const state = {};

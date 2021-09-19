@@ -8,15 +8,23 @@ Object {
       <div
         class="app-div"
       >
-        <nav
-          class="navbar"
-        >
-          <h1
-            class="nav-title"
+        <div>
+          <nav
+            class="navbar"
           >
-            Movies Catalogue
-          </h1>
-        </nav>
+            <a
+              class="navbar-brand text-white"
+              href="/"
+            >
+              <h3>
+                MOVIES
+              </h3>
+            </a>
+            <a
+              href="/search"
+            />
+          </nav>
+        </div>
         <div
           class="container movie-container"
         >
@@ -69,6 +77,22 @@ Object {
           <div
             class="row"
           />
+          <div
+            class="my-5 d-flex justify-content-center "
+          >
+            <button
+              class="btn btn-dark mx-5 px-4 w-25"
+              type="button"
+            >
+              Previous
+            </button>
+            <button
+              class="btn btn-dark mx-5 px-4 w-25"
+              type="button"
+            >
+              Next
+            </button>
+          </div>
         </div>
         <footer
           class="footer"
@@ -77,9 +101,12 @@ Object {
            
           ©
            
-          <strong>
+          <a
+            alt="github link"
+            href="https://github.com/FrederickMih"
+          >
             Mih Frederick
-          </strong>
+          </a>
         </footer>
       </div>
     </div>
@@ -88,15 +115,23 @@ Object {
     <div
       class="app-div"
     >
-      <nav
-        class="navbar"
-      >
-        <h1
-          class="nav-title"
+      <div>
+        <nav
+          class="navbar"
         >
-          Movies Catalogue
-        </h1>
-      </nav>
+          <a
+            class="navbar-brand text-white"
+            href="/"
+          >
+            <h3>
+              MOVIES
+            </h3>
+          </a>
+          <a
+            href="/search"
+          />
+        </nav>
+      </div>
       <div
         class="container movie-container"
       >
@@ -149,6 +184,22 @@ Object {
         <div
           class="row"
         />
+        <div
+          class="my-5 d-flex justify-content-center "
+        >
+          <button
+            class="btn btn-dark mx-5 px-4 w-25"
+            type="button"
+          >
+            Previous
+          </button>
+          <button
+            class="btn btn-dark mx-5 px-4 w-25"
+            type="button"
+          >
+            Next
+          </button>
+        </div>
       </div>
       <footer
         class="footer"
@@ -157,9 +208,12 @@ Object {
          
         ©
          
-        <strong>
+        <a
+          alt="github link"
+          href="https://github.com/FrederickMih"
+        >
           Mih Frederick
-        </strong>
+        </a>
       </footer>
     </div>
   </div>,

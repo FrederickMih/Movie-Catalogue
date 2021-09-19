@@ -45,7 +45,7 @@ Main.propTypes = {
 
 Main.defaultProps = {
   loading: false,
-  keyword: false,
+  keyword: '',
 };
 
 export default connect(mapStateToProps, { fetchMovies })(Main);

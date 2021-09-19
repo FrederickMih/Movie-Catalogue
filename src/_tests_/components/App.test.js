@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import PropTypes from 'prop-types';
 import { rootReducer } from '../../reducers/index';
-import App from '../../components/presentation/App';
+import App from '../../App';
 
 const state = {};
 const middleware = [thunk];

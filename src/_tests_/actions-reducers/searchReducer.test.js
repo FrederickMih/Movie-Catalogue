@@ -1,10 +1,11 @@
-import moviesReducers, { initialState } from '../../reducers/moviesReducers';
+import searchReducer, { initialState } from '../../reducers/searchReducer';
 
 test('it should test for the default states ', () => {
   expect(initialState).toEqual({
     keyword: '',
     movies: [],
     loading: false,
+    initialScreen: true,
     movie: [],
     page: 1,
   });
@@ -15,7 +16,7 @@ test('moviesReducers does not load when wrong action is supplied', () => {
     type: 'WRONG_ACTION',
     payload: true,
   };
-  expect(moviesReducers(initialState, action)).not.toEqual({
+  expect(searchReducer(initialState, action)).not.toEqual({
     ...initialState,
     loading: action.payload,
   });
@@ -27,7 +28,7 @@ test('It should not fetch movies of the Home page when wrong action is given ', 
     payload: ' movies',
     loading: false,
   };
-  expect(moviesReducers(initialState, action)).not.toEqual({
+  expect(searchReducer(initialState, action)).not.toEqual({
     ...initialState,
     movie: action.payload,
     loading: false,
@@ -40,7 +41,7 @@ test('I should not fetch data of the detail page when wrong action is supplied '
     movies: 'more movies',
     loading: false,
   };
-  expect(moviesReducers(initialState, action)).not.toEqual({
+  expect(searchReducer(initialState, action)).not.toEqual({
     ...initialState,
     movies: action.movie,
     loading: false,
@@ -52,7 +53,7 @@ test('moviesReducers can initiate LOADING', () => {
     type: 'LOADING',
     payload: true,
   };
-  expect(moviesReducers(initialState, action)).toEqual({
+  expect(searchReducer(initialState, action)).toEqual({
     ...initialState,
     loading: action.payload,
   });
@@ -64,7 +65,7 @@ test('moviesReducers does not search movies when given wrong action', () => {
     payload: 'some movies',
     loading: false,
   };
-  expect(moviesReducers(initialState, action)).not.toEqual({
+  expect(searchReducer(initialState, action)).not.toEqual({
     ...initialState,
     keyword: action.payload,
     loading: false,
@@ -77,7 +78,7 @@ test('I should fetch movies to the main page when the correct action is dispatch
     movies: 'fetch movies',
     loading: false,
   };
-  expect(moviesReducers(initialState, action)).toEqual({
+  expect(searchReducer(initialState, action)).toEqual({
     ...initialState,
     movies: action.movie,
     loading: false,
@@ -90,7 +91,7 @@ test('It should search a movie when the correct action is dispatch to the store'
     payload: 'some movies',
     loading: false,
   };
-  expect(moviesReducers(initialState, action)).toEqual({
+  expect(searchReducer(initialState, action)).toEqual({
     ...initialState,
     keyword: action.payload,
     loading: false,
@@ -103,7 +104,7 @@ test('It should fetch movies to the detail page when the correct action is dispa
     payload: 'more movies',
     loading: false,
   };
-  expect(moviesReducers(initialState, action)).toEqual({
+  expect(searchReducer(initialState, action)).toEqual({
     ...initialState,
     movie: action.payload,
     loading: false,
