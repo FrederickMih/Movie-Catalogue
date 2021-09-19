@@ -1,0 +1,29 @@
+.app-div {
+  width: 100%;
+  padding-bottom: 5rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+a,
+img {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f69814;
+}
+
+img:hover {
+  color: #c9ab81;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif) no-repeat center center fixed;
+  background-size: cover;
+}

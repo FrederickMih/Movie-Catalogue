@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should renders correctly 1`] = `
+<footer
+  className="footer"
+>
+  Copyright
+   
+  ©
+   
+  <a
+    alt="github link"
+    href="https://github.com/FrederickMih"
+  >
+    Mih Frederick
+  </a>
+</footer>
+`;
