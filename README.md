@@ -23,7 +23,7 @@
 
 This application is deployed on Heroku
 
-## [Live Link](https://fred-movie-app.herokuapp.com/)
+## [Live Link](https://fred-movies-app.herokuapp.com/)
 
 ## Getting Started
 
