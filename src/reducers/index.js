@@ -1,13 +1,13 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import moviesReducer from './moviesReducers';
-import filterMovieReducer from './filterMoviesReducer';
+import searchReducer from './searchReducer';
+import movieFilterReducer from './filterReducer';
 
 const middleware = [thunk];
 const initialState = {};
 
-export const rootReducer = combineReducers({ movies: moviesReducer, filter: filterMovieReducer });
+export const rootReducer = combineReducers({ movies: searchReducer, filter: movieFilterReducer });
 
 const store = createStore(
   rootReducer,

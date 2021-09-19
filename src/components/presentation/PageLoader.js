@@ -1,9 +1,9 @@
 import React from 'react';
-import loading from '../../assets/loading.png';
+import spinner from '../../assets/loader.gif';
 
 const PageLoader = () => (
   <div>
-    <img src={loading} style={{ width: '100px', margin: 'auto', display: 'block' }} alt="Loading" />
+    <img src={spinner} style={{ width: '200px', margin: 'auto', display: 'block' }} alt="Loading" />
   </div>
 );
 

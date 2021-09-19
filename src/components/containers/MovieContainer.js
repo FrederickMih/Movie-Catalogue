@@ -9,11 +9,11 @@ const MovieContainer = (props) => {
   const filterFilms = (movies, filter) => (filter === 'All' ? movies.Search
     : movies.Search.filter((mov) => mov.Type === filter));
 
-  const AlreadyFiltered = filterFilms(movies, filter);
+  const filteredFilms = filterFilms(movies, filter);
 
   let movieBody = '';
   movieBody = movies.Response === 'True'
-    ? AlreadyFiltered.map((movie) => <Movie key={movie.Poster} movie={movie} />) : '';
+    ? filteredFilms.map((movie) => <Movie key={movie.imdbID} movie={movie} />) : '';
   return (
     <div className="row">
       {movieBody}

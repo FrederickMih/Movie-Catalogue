@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import FilterMovie from '../presentation/FilterMovies';
 import {
   searchMovie, fetchMovies, setLoading, filterMovie,
 } from '../../actions/index';
-import '../styles/SearchForm.css';
+import FilterMovie from '../presentation/FilterMovie';
+import '../../styles/SearchForm.css';
 
 const SearchForm = (props) => {
   const { filterMovie } = props;
 
   useEffect(() => {
-    props.fetchMovies('2019');
+    props.fetchMovies('2021');
   }, []);
 
   const onChange = (e) => {
@@ -21,7 +21,7 @@ const SearchForm = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (props.keyword === '') {
-      props.fetchMovies('2019');
+      props.fetchMovies('2021');
     } else {
       props.fetchMovies(props.keyword);
     }

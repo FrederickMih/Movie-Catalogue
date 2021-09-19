@@ -12,7 +12,7 @@ img {
 }
 
 a:hover {
-  color: #c9ab81;
+  color: #f69814;
 }
 
 img:hover {
@@ -24,6 +24,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: url(../../assets/bg2.jpg) no-repeat center center fixed;
+  background: url(https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif) no-repeat center center fixed;
   background-size: cover;
 }

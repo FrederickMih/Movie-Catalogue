@@ -1,20 +1,24 @@
 import {
-  SEARCH_MOVIE,
-  LOADING,
-  FETCH_MOVIES,
-  FETCH_MOVIE_DETAILS,
+  SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE_DETAILS, LOADING,
 } from '../actions/constants';
 
 export const initialState = {
   keyword: '',
   movies: [],
   loading: false,
+  initialScreen: true,
   movie: [],
   page: 1,
 };
 
-const moviesReducer = (state = initialState, action) => {
+const searchReducer = (state = initialState, action) => {
   switch (action.type) {
+    case SEARCH_MOVIE:
+      return {
+        ...state,
+        keyword: action.payload,
+        loading: false,
+      };
     case FETCH_MOVIES:
       return {
         ...state,
@@ -27,13 +31,6 @@ const moviesReducer = (state = initialState, action) => {
         movie: action.payload,
         loading: false,
       };
-
-    case SEARCH_MOVIE:
-      return {
-        ...state,
-        keyword: action.payload,
-        loading: false,
-      };
     case LOADING:
       return {
         ...state,
@@ -44,4 +41,4 @@ const moviesReducer = (state = initialState, action) => {
   }
 };
 
-export default moviesReducer;
+export default searchReducer;

@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-const PagePagination = ({ handlePreviousClick, handleNextClick }) => (
-  <div className="my-4 d-flex justify-content-left ">
+const Pagination = ({ handleNextClick, handlePreviousClick }) => (
+  <div className="my-5 d-flex justify-content-center ">
     <button
       type="button"
       onClick={handlePreviousClick}
       className="btn btn-dark mx-5 px-4 w-25"
     >
-      Prev
+      Previous
     </button>
     <button
       type="button"
@@ -19,9 +19,9 @@ const PagePagination = ({ handlePreviousClick, handleNextClick }) => (
   </div>
 );
 
-PagePagination.propTypes = {
+Pagination.propTypes = {
   handleNextClick: PropTypes.func.isRequired,
   handlePreviousClick: PropTypes.func.isRequired,
 };
 
-export default PagePagination;
+export default Pagination;

@@ -4,7 +4,7 @@ export const initialState = {
   filter: 'All',
 };
 
-const filterMovieReducer = (state = initialState, action) => {
+const movieFilterReducer = (state = initialState, action) => {
   switch (action.type) {
     case FILTER_MOVIE: {
       const filter = action.payload;
@@ -17,4 +17,4 @@ const filterMovieReducer = (state = initialState, action) => {
   }
 };
 
-export default filterMovieReducer;
+export default movieFilterReducer;

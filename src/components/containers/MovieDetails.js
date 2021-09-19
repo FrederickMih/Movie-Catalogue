@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchMovieDetails, setLoading } from '../../actions/index';
 import PageLoader from '../presentation/PageLoader';
-import '../styles/MoviesDetails.css';
+import '../../styles/MovieDetails.css';
 
 const MovieDetails = (props) => {
   useEffect(() => {
@@ -12,14 +12,14 @@ const MovieDetails = (props) => {
     props.setLoading();
   }, []);
 
-  const { loading, movie } = props;
+  const { movie, loading } = props;
 
-  const moreContent = (
+  const movieContent = (
     <div className="container details-div">
-      <div className="col-md-4 card card-body image-logo">
-        <img src={movie.Poster} className="thumnail" alt="Poster" />
-      </div>
       <div className="row">
+        <div className="col-md-4 card card-body">
+          <img src={movie.Poster} className="thumnail" alt="Poster" />
+        </div>
         <div className="col-md-8">
           <h2 className="mb-4">{movie.Title}</h2>
           <ul className="list-group">
@@ -101,10 +101,10 @@ const MovieDetails = (props) => {
           <div className="col-md-12">
             <hr />
             <a href={`https://www.imdb.com/title/${movie.imdbID}`} target="_blank" rel="noopener noreferrer" className="btn mx-5 mt-2 btn-dark">
-              ReadMore...
+              ReadMore....
             </a>
             <Link to="/" rel="noopener noreferrer" className="btn mx-3 btn-default btn-dark">
-              Back Home
+              Home
             </Link>
           </div>
         </div>
@@ -112,9 +112,9 @@ const MovieDetails = (props) => {
     </div>
   );
 
-  const body = loading ? <PageLoader /> : moreContent;
+  const content = loading ? <PageLoader /> : movieContent;
   return (
-    <div>{body}</div>
+    <div>{content}</div>
   );
 };
 

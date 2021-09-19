@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Footer.css';
+import '../../styles/Footer.css';
 
 const Footer = () => (
   <footer className="footer">
@@ -7,7 +7,7 @@ const Footer = () => (
     {' '}
     &copy;
     {' '}
-    <strong>Mih Frederick</strong>
+    <a href="https://github.com/FrederickMih" alt="github link">Mih Frederick</a>
   </footer>
 );
 

@@ -6,8 +6,14 @@
   width: 80%;
   color: white;
   border: 1px solid #c9ab81;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: rgba(62, 87, 104, 0.787);
   padding: 3rem;
   margin-bottom: 9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .movie-container{
+    width: 98%;
+  }
 }
